@@ -1,0 +1,6 @@
+{
+  "name": "Dastaan | Royal Indian Fine Dining",
+  "description": "An opulent Awadhi & Pan-Indian culinary destination celebrating heritage dum cooking, copper handi curries, and royal spice pairings in a warm candlelit mahogany setting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0c0806;
+    color: #fbf7f0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+@keyframes candleFlicker {
+  0%, 100% {
+    opacity: 0.92;
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 12px rgba(234, 179, 8, 0.45));
+  }
+  25% {
+    opacity: 0.85;
+    transform: scale(0.98) translateY(0.5px);
+    filter: drop-shadow(0 0 9px rgba(217, 119, 6, 0.35));
+  }
+  50% {
+    opacity: 0.98;
+    transform: scale(1.02) translateY(-0.5px);
+    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.55));
+  }
+  75% {
+    opacity: 0.89;
+    transform: scale(0.99) translateY(0.2px);
+    filter: drop-shadow(0 0 10px rgba(234, 179, 8, 0.4));
+  }
+}
+
+@keyframes steamRise {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: translateY(-8px) scaleX(1.08);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px) scaleX(1.15);
+  }
+}
+
+.animate-candle-flame {
+  animation: candleFlicker 3.2s ease-in-out infinite;
+}
+
+.animate-steam {
+  animation: steamRise 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar for menu & wine list */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140e0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d2c1e;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c29b38;
+}
